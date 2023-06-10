@@ -1,0 +1,56 @@
+# This is the default configuration file of BungeeTabListPlus.
+#
+# Since the configuration of the plugin is quite complex you
+# might want to have a look at the wiki from time to time.
+#
+# Wiki: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki
+#  Placeholders: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Placeholders
+#  Examples: https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Examples
+#
+
+showTo: all
+priority: 0
+
+showHeaderFooter: true
+header: |-
+  &6SemiVanilla
+  &7Survival
+  &m      &8&m[  &r   &8&m  ]&f&m      &r
+footer: |-
+  &m      &8&m[  &r   &8&m  ]&f&m      &r
+  &7${viewer bungee_total}/50 Online
+  &7Ping: ${viewer ping}
+
+# Configure whether hidden players appear on the tab list
+# see https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Hidden-Players
+hiddenPlayers: VISIBLE
+
+playerSets:
+  all_players: all
+
+type: DYNAMIC_SIZE
+
+playerSet: all_players
+playerOrder: "server"
+playerComponent: "${player name}"
+
+# Custom placeholders are a powerful mechanism to add more dynamic content
+# to the tab list.
+# See https://github.com/CodeCrafter47/BungeeTabListPlus/wiki/Custom=Placeholders
+customPlaceholders:
+#  server_color:
+#    !switch
+#    expression: "${viewer server}"
+#    replacements:
+#      "survival": "&c"
+#      "khavalon": "&c"
+#      "creative": "&b"
+#    defaultReplacement: "&a"
+#  server_color_2:
+#    !switch
+#    expression: "${viewer server}"
+#    replacements:
+#      "survival": "&4"
+#      "khavalon": "&4"
+#      "creative": "&3"
+#    defaultReplacement: "&2"
