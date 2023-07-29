@@ -14,7 +14,7 @@ priority: 0
 showHeaderFooter: true
 header: |-
   &6SemiVanilla
-  &7Survival
+  &7${server_name}&r
   &m      &8&m[  &r   &8&m  ]&f&m      &r
 footer: |-
   &m      &8&m[  &r   &8&m  ]&f&m      &r
@@ -32,7 +32,7 @@ type: DYNAMIC_SIZE
 
 playerSet: all_players
 playerOrder: "server"
-playerComponent: "${player name}"
+playerComponent: "${staff_icon}${player name}"
 
 # Custom placeholders are a powerful mechanism to add more dynamic content
 # to the tab list.
@@ -54,3 +54,16 @@ customPlaceholders:
 #      "khavalon": "&4"
 #      "creative": "&3"
 #    defaultReplacement: "&2"
+  server_name:
+    !switch
+    expression: "${viewer server}"
+    replacements:
+      "semivanilla": "&cOld Survival"
+      "survival1201": "Survival"
+    defaultReplacement: "Survival"
+  staff_icon:
+    !switch
+    expression: "${player permission tablist.staff}"
+    replacements:
+      "true": "&c[Staff]&r "
+    defaultReplacement: ""

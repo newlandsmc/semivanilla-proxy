@@ -3,7 +3,7 @@ listeners:
 - query_port: 25565
   motd: |
     &8              &m  ]&f&m-    &r &6&lSemiVanilla &f&m    -&8&m[  &r
-    &7&l            1.19.4 Survival Server
+    &7&l           1.20.1 Survival Server
   tab_list: SERVER
   query_enabled: true
   proxy_protocol: false
@@ -11,7 +11,7 @@ listeners:
     pvp.md-5.net: pvp
   ping_passthrough: false
   priorities:
-  - semivanilla
+  - survival1201
   bind_local_address: true
   host: 69.129.212.210:25565
   max_players: 50
@@ -52,6 +52,12 @@ servers:
   semivanilla:
     motd: |
       &8              &m  ]&f&m-    &r &6&lSemiVanilla &f&m    -&8&m[  &r
-      &7&l            1.19.4 Survival Server
+      &7&l           1.20.1 Survival Server
     address: localhost:25566
+    restricted: false
+  survival1201:
+    motd: |
+      &8              &m  ]&f&m-    &r &6&lSemiVanilla &f&m    -&8&m[  &r
+      &7&l           1.20.1 Survival Server
+    address: localhost:25570
     restricted: false
