@@ -3,7 +3,7 @@ listeners:
 - query_port: 25565
   motd: |
     &8              &m  ]&f&m-    &r &6&lSemiVanilla &f&m    -&8&m[  &r
-    &7&l           1.20.1 Survival Server
+    &7&l            1.20.1 Survival Server
   tab_list: SERVER
   query_enabled: true
   proxy_protocol: false
@@ -33,8 +33,8 @@ log_pings: true
 connection_throttle_limit: 1
 server_connect_timeout: 5000
 timeout: 30000
-stats: 9c345aca-5737-41b9-a651-2c75cea65065
 player_limit: -1
+prevent_proxy_connections: false
 ip_forward: true
 groups:
   md_5:
@@ -42,22 +42,16 @@ groups:
 remote_ping_timeout: 5000
 connection_throttle: 5000
 log_commands: false
-prevent_proxy_connections: false
+stats: 9c345aca-5737-41b9-a651-2c75cea65065
 online_mode: true
 forge_support: true
 disabled_commands:
 - server
 - servers
 servers:
-  semivanilla:
-    motd: |
-      &8              &m  ]&f&m-    &r &6&lSemiVanilla &f&m    -&8&m[  &r
-      &7&l           1.20.1 Survival Server
-    address: localhost:25566
-    restricted: false
   survival1201:
     motd: |
       &8              &m  ]&f&m-    &r &6&lSemiVanilla &f&m    -&8&m[  &r
-      &7&l           1.20.1 Survival Server
+      &7&l            1.20.1 Survival Server
     address: localhost:25570
     restricted: false

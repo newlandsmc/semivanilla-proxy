@@ -31,8 +31,8 @@ playerSets:
 type: DYNAMIC_SIZE
 
 playerSet: all_players
-playerOrder: "server"
-playerComponent: "${staff_icon}${player name}"
+playerOrder: "vault_primary_group_weight desc, name asc"
+playerComponent: "${staff_icon}${afk_icon}${player name}"
 
 # Custom placeholders are a powerful mechanism to add more dynamic content
 # to the tab list.
@@ -66,4 +66,10 @@ customPlaceholders:
     expression: "${player permission tablist.staff}"
     replacements:
       "true": "&c[Staff]&r "
+    defaultReplacement: ""
+  afk_icon:
+    !switch
+    expression: "${player essentials_afk}"
+    replacements:
+      "true": "&7[AFK]&r "
     defaultReplacement: ""
